@@ -334,6 +334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 564585446}
   - component: {fileID: 564585445}
+  - component: {fileID: 564585447}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Untagged
@@ -368,6 +369,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &564585447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564585444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 006391d9d5b4950428d82b1006564b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tile: {fileID: 11400000, guid: bb0102f2f3c1d6f4f820e82b305dbd94, type: 2}
+  board: {fileID: 1150482224}
+  trackingPiece: {fileID: 1150482223}
 --- !u!1 &1150482220
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,6 +394,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1150482222}
   - component: {fileID: 1150482221}
+  - component: {fileID: 1150482224}
+  - component: {fileID: 1150482223}
   m_Layer: 0
   m_Name: Board
   m_TagString: Untagged
@@ -412,6 +430,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1150482223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150482220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5333d8b29dcad4b9d1649afbb6fe32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stepDelay: 1
+  lockDelay: 0.5
+--- !u!114 &1150482224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150482220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d4deccd420ab44099d1ba3495bf85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tetrominoes:
+  - tetromino: 0
+    tile: {fileID: 11400000, guid: 9b0e4f5b3d6f82a4aac6aa5b1e947d23, type: 2}
+  - tetromino: 1
+    tile: {fileID: 11400000, guid: 9e32783d1dadd5a46baf9981a8649072, type: 2}
+  - tetromino: 2
+    tile: {fileID: 11400000, guid: 4be135104ec86d2448ebc46a8ca3c720, type: 2}
+  - tetromino: 3
+    tile: {fileID: 11400000, guid: 3373ca5021c8e8e45aaa07bf903b4daf, type: 2}
+  - tetromino: 4
+    tile: {fileID: 11400000, guid: 2635d796e7ee65d429df32efb3665e4e, type: 2}
+  - tetromino: 5
+    tile: {fileID: 11400000, guid: 7e8403bbcb0cec84fb832c158d57cfdc, type: 2}
+  - tetromino: 6
+    tile: {fileID: 11400000, guid: d79d29beabd7e174aa71d09082c712e0, type: 2}
+  spawnPosition: {x: -1, y: 8, z: 0}
+  boardSize: {x: 10, y: 20}
 --- !u!1 &1747943229
 GameObject:
   m_ObjectHideFlags: 0
